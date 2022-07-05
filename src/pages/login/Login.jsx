@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./login.css"
 import axios from "axios"
-import React, { useContext, useRef, userRef} from 'react'
+import React, { useContext, useRef} from 'react'
 // import { Context } from "../../context/Context"
 
 export default function Login() {
@@ -34,7 +34,7 @@ export default function Login() {
               type="text" 
               className= "loginInput" 
               placeholder="Enter your email..."
-              ref={userRef}
+              ref={emailRef}
             />
             <label>Password</label>
             <input 
