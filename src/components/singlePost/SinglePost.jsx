@@ -55,8 +55,7 @@ export default function SinglePost() {
         title,
         desc,
       });
-      let postUrl = "https://bsaltyblog.netlify.app/post/" + path
-      window.location.replace(postUrl)
+      window.location.reload()
     } catch (error) {
       console.log(error)
     }
