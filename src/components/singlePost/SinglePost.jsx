@@ -19,7 +19,7 @@ export default function SinglePost() {
       async function fetchDataAsync() {
         console.log("Fetch Data");
         try {
-          const url = "http://localhost:8080/api/posts/" + path;
+          const url = "https://bsalty-blog-backend.herokuapp.com/api/posts/" + path;
           const res = await axios.get(url);
           setPost(res.data);
           setTitle(res.data.title);
