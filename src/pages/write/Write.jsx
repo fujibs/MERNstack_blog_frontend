@@ -32,7 +32,7 @@ export default function Write() {
   try {
       let url = "https://bsalty-blog-backend.herokuapp.com/api/posts"
       const res = await axios.post(url, newPost)
-      let singleUrl = "https://bsalty-blog-backend.herokuapp.com/client/post/" + res.data_id
+      let singleUrl = "https://bsalty-blog-backend.herokuapp.com/"
       window.location.replace(singleUrl)
     } catch(error) {
       console.log(error)
