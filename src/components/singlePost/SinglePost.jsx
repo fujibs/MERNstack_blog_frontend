@@ -41,7 +41,7 @@ export default function SinglePost() {
       try{
         let url = "https://bsalty-blog-backend.herokuapp.com/api/posts/" + path
         await axios.delete(url)
-        let homeUrl = "https://bsalty-blog-backend.herokuapp.com/client/homepage"
+        let homeUrl = "https://bsaltyblog.netlify.app/"
         window.location.replace(homeUrl)
       } catch (error) {
         console.log(error)
@@ -55,7 +55,7 @@ export default function SinglePost() {
         title,
         desc,
       });
-      window.location.reload()
+      window.location.replace(url)
     } catch (error) {
       console.log(error)
     }
