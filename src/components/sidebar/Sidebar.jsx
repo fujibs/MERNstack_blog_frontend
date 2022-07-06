@@ -12,7 +12,7 @@ export default function Sidebar() {
     async function fetchDataAsync() {
       console.log("Fetch Data");
       try {
-        const url = "https://bsalty-react-blog.herokuapp.com/api/categories/";
+        const url = "https://bsalty-blog-backend.herokuapp.com/api/categories/";
         const res = await axios.get(url);
         setCats(res.data);
         console.log(res.data);
