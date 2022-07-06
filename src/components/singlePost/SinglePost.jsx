@@ -55,7 +55,7 @@ export default function SinglePost() {
         title,
         desc,
       });
-      window.location.reload()
+      window.location.reload(true)
     } catch (error) {
       console.log(error)
     }
